@@ -1,10 +1,10 @@
 import { Box, Container, Typography, Grid, TextField, Button, AppBar, Toolbar, Select, MenuItem } from "@mui/material";
-import { grey } from "@mui/material/colors";
 import Image from "next/image";
+import BorderedBottomBox from "../../Wrapper/BorderedBottomBox";
 
 const Header = () => {
   return (
-    <Box sx={{ borderBottom: `8px solid ${grey[900]}`}}>
+    <BorderedBottomBox>
       <AppBar sx={{ bgcolor: 'transparent', padding: '25px 20px'}} elevation={0}>
         <Toolbar>
           <Grid container alignItems='center' spacing={2}>
@@ -79,7 +79,7 @@ const Header = () => {
           </Grid>
         </Container>
       </Box>
-    </Box>
+    </BorderedBottomBox>
   )
 }
 
