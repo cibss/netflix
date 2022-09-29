@@ -5,7 +5,7 @@ import BorderedBottomBox from "../../Wrapper/BorderedBottomBox";
 const Header = () => {
   return (
     <BorderedBottomBox>
-      <AppBar sx={{ bgcolor: 'transparent', padding: '25px 20px'}} elevation={0}>
+      <AppBar sx={{ bgcolor: 'transparent', padding: '25px 20px', position: 'absolute'}} elevation={0}>
         <Toolbar>
           <Grid container alignItems='center' spacing={2}>
             <Grid item xs>
