@@ -1,10 +1,17 @@
 import { Box, Container, Typography, Grid, Button, AppBar, Toolbar } from "@mui/material";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import BorderedBottomBox from "../../Wrapper/BorderedBottomBox";
 import GetStartedField from "./GetStartedField";
 import SwitchLanguage from "./SwitchLanguage";
 
 const Header = () => {
+  const router = useRouter();
+
+  const loginPageHandler = () => {
+    router.push('/login')
+  }
+
   return (
     <BorderedBottomBox>
       <AppBar sx={{ bgcolor: 'transparent', padding: '25px 20px', position: 'absolute'}} elevation={0}>
@@ -17,7 +24,7 @@ const Header = () => {
               <SwitchLanguage />
             </Grid>
             <Grid item xs='auto'>
-              <Button color="primary" variant="contained">Sign in</Button>
+              <Button color="primary" variant="contained" onClick={loginPageHandler}>Sign in</Button>
             </Grid>
           </Grid>
         </Toolbar>
