@@ -12,7 +12,7 @@ const FAQ = () => {
       </Container>
 
       {QUESTIONS.map((question) => (
-        <Accordion>
+        <Accordion sx={{ bgcolor: 'common.black', color: 'common.white' }}>
           <AccordionSummary>
             <Typography>{question.summary}</Typography>
           </AccordionSummary>

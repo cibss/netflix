@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 
 const BorderedBottomBox = styled(Box)(({ theme }) => ({
   bgcolor: theme.palette.common.black,
+  color: theme.palette.common.white,
   borderBottom: `8px solid ${grey[900]}`
 }))
 

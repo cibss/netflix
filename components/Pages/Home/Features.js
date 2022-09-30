@@ -17,7 +17,7 @@ const Description = ({ text }) => (
 
 const Features = () => {
   return (
-    <Box sx={{ bgcolor: 'common.black', color: 'common.white' }}>
+    <Box>
 
       <BorderedBottomBox>
         <Container maxWidth='lg' sx={{ py: 6 }}>
