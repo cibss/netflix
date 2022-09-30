@@ -64,7 +64,7 @@ const Login = () => {
                 <FormControl fullWidth sx={{ mb: 4 }}>
                   <TextField id="password" type={showPassword ? 'text' : 'password'} name="password" label='Password' variant="filled" InputProps={{
                     endAdornment: (
-                      <InputAdornment>
+                      <InputAdornment position="end">
                         <Button onClick={() => setShowPassword(!showPassword)}>
                           {showPassword ? 'Hide' : 'Show'}
                         </Button>

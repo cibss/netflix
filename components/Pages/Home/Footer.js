@@ -10,8 +10,8 @@ const Footer = () => {
           <Typography mb={4}>Questions? Call 007-803-321-2130</Typography>
           <Box>
             <Grid container spacing={4} mb={4}>
-              {FOOTER_LIST.map((item) => (
-                <Grid item xs={6} md={3}>
+              {FOOTER_LIST.map((item, index) => (
+                <Grid item xs={6} md={3} key={index}>
                   <Typography variant="caption" component='a' href='#'>{item}</Typography>
                 </Grid>
               ))}
