@@ -1,7 +1,8 @@
-import { Box, Container, Typography, Grid, TextField, Button, AppBar, Toolbar, Select, MenuItem } from "@mui/material";
+import { Box, Container, Typography, Grid, Button, AppBar, Toolbar } from "@mui/material";
 import Image from "next/image";
 import BorderedBottomBox from "../../Wrapper/BorderedBottomBox";
 import GetStartedField from "./GetStartedField";
+import SwitchLanguage from "./SwitchLanguage";
 
 const Header = () => {
   return (
@@ -13,21 +14,7 @@ const Header = () => {
               <Image src='/images/netflix.svg' height='45px' width='167' layout='intrinsic' alt='logo' />
             </Grid>
             <Grid item xs='auto'>
-              <Select name="lang" variant="outlined" size="small" defaultValue='EN' sx={{
-                borderWidth: '2px',
-                borderStyle: 'solid',
-                borderColor: 'common.white',
-                color: 'common.white',
-                '& .MuiSelect-icon': {
-                  color: 'common.white'
-                },
-                '& .MuiOutlinedInput-notchedOutline': {
-                  border: 'none'
-                }
-              }}>
-                <MenuItem value='EN'>English</MenuItem>
-                <MenuItem value='ID'>Bahasa Indonesia</MenuItem>
-              </Select>
+              <SwitchLanguage />
             </Grid>
             <Grid item xs='auto'>
               <Button color="primary" variant="contained">Sign in</Button>
