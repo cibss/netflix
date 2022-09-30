@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Container, Typography, Accordion, AccordionSummary, AccordionDetails, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { QUESTIONS } from "../../../utils/constants";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AddIcon from '@mui/icons-material/Add';
+import CloseIcon from '@mui/icons-material/Close';
 import BorderedBottomBox from "../../Wrapper/BorderedBottomBox";
 import GetStartedField from "./GetStartedField";
 
@@ -36,7 +37,7 @@ const FAQ = () => {
           {QUESTIONS.map((question) => (
             <CustomAccordion square expanded={expanded === question.id} onChange={expandHandler(question.id)} key={question.id}>
               <CustomAccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48}} />}
                 aria-controls={question.id + '-content'}
                 id={question.id + '-header'}
               >
