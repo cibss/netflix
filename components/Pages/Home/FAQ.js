@@ -37,8 +37,8 @@ const FAQ = () => {
             <CustomAccordion square expanded={expanded === question.id} onChange={expandHandler(question.id)} key={question.id}>
               <CustomAccordionSummary
                 expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+                aria-controls={question.id + '-content'}
+                id={question.id + '-header'}
               >
                 <Typography variant="h5">{question.summary}</Typography>
               </CustomAccordionSummary>
